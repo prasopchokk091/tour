@@ -1,0 +1,86 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "tour"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico",
+        "img",
+        "css",
+        "js"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css",
+        "../src/assets/css/bootstrap.min.css",
+        "../src/assets/css/animate.min.css",
+        "../src/assets/css/style.css",
+        "../src/assets/css/menu.css",
+        "../src/assets/css/responsive.css",
+        "../src/assets/css/fontello/css/all-fontello.min.css",
+        "../src/assets/css/new_icons/css/icon_set_all.min.css",
+        "../src/assets/css/icon_restaurant/css/icon_restaurants.min.css",
+        "../src/assets/css/magnific-popup.css",
+        "../src/assets/css/pop_up.css",
+        "../src/assets/css/custom.css",
+        "../src/assets/css/ion.rangeSlider.css",
+        "../src/assets/css/ion.rangeSlider.skinFlat.css",
+        "../src/assets/css/date_time_picker.css",
+        "../src/assets/css/skins/square/grey.css"
+      ],
+      "scripts": [
+        "../src/assets/js/jquery-2.2.4.min.js",
+        "../src/assets/js/bootstrap-datepicker.js",
+        "../src/assets/js/bootstrap-timepicker.js",
+        "../src/assets/js/common_scripts_min.js",
+        "../src/assets/js/functions.js",
+        "../src/assets/js/modernizr.js",
+        "../src/assets/js/video_header.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "src/tsconfig.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
